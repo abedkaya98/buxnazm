@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buxna CS 1.6 Server</title>
+    <link rel="stylesheet" href="buxna.css">
+</head>
+<body>
+     <header>
+            <div class="header-content">
+                <h1>Welcome to Buxna CS 1.6 Server</h1>
+                <p>Join the action-packed world of CS 1.6!</p>
+                <nav>
+                    <ul>
+                        <li><a href="#servers">Our Servers</a></li>
+                        <li><a href="#market">Market</a></li>
+                        <li><a href="#discord">Discord</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="background-shapes">
+                <div class="circle"></div>
+                <div class="triangle"></div>
+            </div>
+        </header>
+    
+        <div class="main-content">
+            <section class="server-description">
+                <h2>About Buxna Palankus</h2>
+                <p>Welcome to Buxna Palankus, our extraordinary zombie server thriving since 2013! We're thrilled to have you join us. Our server has undergone numerous enhancements over the years to ensure an exceptional experience tailored to your enjoyment. Join us to immerse yourself in thrilling gameplay alongside our vibrant community of players, dedicated admins, and our attentive owner.</p>
+                <p>At Buxna Palankus, your fun and satisfaction are our top priorities. Our team is committed to providing assistance and support whenever you need it. To ensure a harmonious gaming environment for all, we kindly ask that you click the button below to view the rules.</p>
+                <button class="rules-button" onclick="toggleRules()">Rules</button>
+                <section class="rules-section" id="rules-section">
+                    <h2>Server Rules</h2>
+                    <ul class="rules-list">
+                        <li>Respect Everyone: Treat all players and staff with courtesy and respect.</li>
+                        <li>No Teaming: Collaborative efforts between players to gain an unfair advantage are prohibited.</li>
+                        <li>Spamming: Excessive spamming will result in a 1-hour gag.</li>
+                        <li>No Insults: Any form of insults or offensive behavior leads to a 2-hour gag.</li>
+                        <li>No Advertisements: Advertising other servers or products will result in a 3-day gag.</li>
+                        <li>No Hacking: Use of hacks or cheats will result in a permanent ban.</li>
+                        <li>No Begging: Asking for ammo or rank excessively will result in a 1-day gag.</li>
+                        <li>No Exploits: Exploiting SGS, Bhop, or Strafe will result in a 1-day ban.</li>
+                        <li>No Hiding as Zombie: Intentional hiding as a zombie to avoid gameplay is not allowed.</li>
+                        <li>No Ghosting: Revealing information as a spectator to living players is prohibited.</li>
+                        <li>No Spawn Camping: Attacking players immediately as they spawn is not allowed.</li>
+                        <li>No Bug Abuse: Exploiting map or game bugs for advantage is prohibited.</li>
+                        <li>No Inappropriate Content: Sharing inappropriate content will result in punishment.</li>
+                        <li>No Discrimination: Discriminatory behavior or language will not be tolerated.</li>
+                        <li>No Mic/Chat Spam: Excessive mic or chat usage disrupting gameplay is prohibited.</li>
+                    </ul>
+                </section>
+            </section>
+            <div class="tracker">
+                <iframe src="https://cache.gametracker.com/components/html0/?host=51.195.81.38:27018&bgColor=333333&fontColor=cccccc&titleBgColor=222222&titleColor=ff9900&borderColor=555555&linkColor=ffcc00&borderLinkColor=222222&showMap=1&currentPlayersHeight=100&showCurrPlayers=1&topPlayersHeight=100&showTopPlayers=1&showBlogs=0&width=1000" frameborder="0" scrolling="no" width="1000" height="536"></iframe>
+            </div>
+        </div>
+        
+        <script>
+             function toggleRules() {
+            var rulesSection = document.getElementById("rules-section");
+            if (rulesSection.classList.contains("active")) {
+                rulesSection.style.maxHeight = "0";
+                rulesSection.style.opacity = "0";
+                setTimeout(function() {
+                    rulesSection.classList.remove("active");
+                }, 300);
+            } else {
+                rulesSection.classList.add("active");
+                rulesSection.style.maxHeight = "500px"; /* Adjust the max-height as needed */
+                rulesSection.style.opacity = "1";
+            }
+        }     
+        </script>
+   </body>
+</html>
