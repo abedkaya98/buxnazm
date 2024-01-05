@@ -5,52 +5,63 @@ body {
     padding: 0;
     background-color: #1f1f1f; /* Dark background color */
     color: #ddd; /* Lighter text color */
+    background-image: url('csgo_wallpaper_huc62c102ab1c2563c643de0c521ca4494_1954365_1920x1080_resize_q100_lanczos.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500; 
 }
 
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     overflow: hidden;
     color: #fff;
-    padding: 5px 0;
+    padding: 10px 0;
     text-align: center;
     background: linear-gradient(135deg, #ff8008, #ffc837)
+    
+   
 }
 .logo {
-    width: 150px; /* Adjust width as needed */
+    width: 140px; /* Adjust width as needed */
     height: auto; /* Maintain aspect ratio */
     display: inline-block;
-    margin-right: 40px; /* Adjust margin to create space between logo and text */
+    margin-right: 20px; /* Adjust margin for separation */
+    margin-left: 1px; /* Adjust margin to create space between logo and text */
 }
 .main-content {
-    background-image: url('CS-GO-wallpaper-HD-CT_huaa8c3708e17173cf2732df089d111cfb_386915_1920x1080_resize_q100_lanczos.jpg'); /* Replace with your background image URL */
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 120vh; /* Adjust height as needed */
+    padding-bottom: 305px; /* Adjust according to footer height */
 }
+
 
 .header-content {
     position: relative;
     z-index: 1;
+
     
 }
 
 .header-content h1 {
-    font-size: 2.5em;
-    margin-bottom: 15px;
+    font-size: 1.5em; /* Decrease font size */
+    margin-bottom: 5px; /* Adjust margin */
     animation: slideIn 1s ease 0.5s forwards;
 }
 
 .header-content p {
     font-size: 1em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     animation: slideIn 1s ease 1s forwards;
 }
-
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     animation: slideIn 1s ease 1.5s forwards;
+    display: inline-block; /* Align navigation horizontally */
+    margin-left: 0px;
 }
 
 nav ul li {
@@ -62,7 +73,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    padding: 15px 30px; /* Increased button size */
+    padding: 12px 24px; /* Increased button size */
     color: #fff;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -297,13 +308,39 @@ nav ul li a:hover {
     width: 900px; /* Set the width of the widget */
     height: auto; /* Maintain aspect ratio */
 }
+/*
 .tracker {
-    text-align: center; /* Center align the widget */
+    text-align: center; 
 }
 
 .tracker img {
-    width: 400px; /* Set the width of the widget */
-    height: auto; /* Maintain aspect ratio */
+    width: 400px; 
+    height: auto; 
+}
+*/
+footer {
+    width: 100%;
+    
+    background-color: #c7c7c7c2;
+    padding: 10px 0;
+    text-align: center;
+    color: #1f1f1f;
+}
+
+.social-icons img {
+    width: 30px; /* Adjust the size of social icons */
+    margin: 0 10px; /* Adjust space between icons */
+}
+
+.social-icons a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Set color for social icons (if text is used) */
+}
+
+/* Copyright text */
+.copyright {
+    margin-top: 10px; /* Adjust margin from social icons */
+    font-size: 14px; /* Adjust font size */
 }
 
 
