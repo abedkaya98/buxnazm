@@ -308,16 +308,6 @@ nav ul li a:hover {
     width: 900px; /* Set the width of the widget */
     height: auto; /* Maintain aspect ratio */
 }
-/*
-.tracker {
-    text-align: center; 
-}
-
-.tracker img {
-    width: 400px; 
-    height: auto; 
-}
-*/
 footer {
     width: 100%;
     
@@ -328,19 +318,19 @@ footer {
 }
 
 .social-icons img {
-    width: 30px; /* Adjust the size of social icons */
-    margin: 0 10px; /* Adjust space between icons */
+    width: 30px; 
+    margin: 0 10px; 
 }
 
 .social-icons a {
-    text-decoration: none; /* Remove underline from links */
-    color: #fff; /* Set color for social icons (if text is used) */
+    text-decoration: none; 
+    color: #fff; 
 }
 
-/* Copyright text */
+
 .copyright {
-    margin-top: 10px; /* Adjust margin from social icons */
-    font-size: 14px; /* Adjust font size */
+    margin-top: 10px; 
+    font-size: 14px; 
 }
 
 
