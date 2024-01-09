@@ -1,11 +1,10 @@
-/* styles.css */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #1f1f1f; /* Dark background color */
     color: #ddd; /* Lighter text color */
-    background-image: url('counter-strike.jpeg'); 
+    background-image: url('owner.jpeg'); 
     background-size: cover;
     background-repeat: no-repeat;
     height: 500; 
@@ -170,22 +169,178 @@ nav ul li a:hover {
         transform: translateY(-15px);
     }
 }
-/*-------------------------------------------------------*/
-.server-stats {
-    display: flex;
-    justify-content: center; /* Horizontal centering */
-    align-items: center; /* Vertical centering */
-    height: 100vh; /* Adjust to the desired height */
-  }
-  
-.server {
-    opacity: 1;
+h3 {
+    font-size: 27px;
+    font-family: 'Unispace';
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    margin-top: 0;
+}
+.container {
+    max-width: 1200px; /* Adjusted width */
+    max-height: 500px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.473);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #cd8d0da2;
+}
+.package {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ca0e0e00; 
+}
+.package:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+h2 {
+    font-family: 'Unispace';
+    color: #ffffff;
+    margin-top: 0;
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 10px; /* Increased margin */
+}
+.offer p {
+    color: #fdfdfd; 
+    font-size: 18px;
+}
+.offer strong {
+    color: #ffee00;
+    font-size: 20px;
 }
 
+.vip-info {
+    max-width: 1200px; /* Adjusted width */
+    max-height: 700px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.473);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #cd8d0da2;
+}
 
-/*-------------------------------------------------------*/
+.vip-info h2 {
+    font-family: 'Unispace';
+    color: #ffffff; /* Dark Red */
+    margin-top: 0;
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 10px; 
+}
+.vip-info p {
+    color: #ffee00;
+    margin: 8px 0;
+}
+.vip-info strong {
+    color: #ffffff; /* Bright Green */
+    margin: 8px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.features-container {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.strong-list {
+    margin-right: 100px; /* Adjust the spacing between strong tags and the list */
+}
+
+.centered-list {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Adjust the text alignment within the list */
+}
+.centered-list li {
+    font-size: 20px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+.paypal {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+button.paypal-button {
+    background-color: #003087;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.685);
+}
+
+button.paypal-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.6s ease;
+    border-radius: 50%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+button.paypal-button:hover::before {
+    width: 300%;
+    height: 300%;
+}
+
+button.paypal-button img {
+    height: 25px;
+    margin-right: 10px;
+    z-index: 2;
+}
+
+button.paypal-button i {
+    margin-left: 10px;
+    z-index: 2;
+}
+.iframe {
+    text-align: center; /* Center align the widget */
+}
+
+.iframe img {
+    width: 900px; /* Set the width of the widget */
+    height: auto; /* Maintain aspect ratio */
+}
+
 footer {
     width: 100%;
+   margin-top: 200px;
     
     background-color: #c7c7c7c2;
     padding: 10px 0;
