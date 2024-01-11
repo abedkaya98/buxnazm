@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buxna CS 1.6 Server</title>
+    <link rel="stylesheet" href="buxna.css">
+</head>
+<body>
+     <header>
+            <div class="header-content">
+                <h1>Welcome to Buxna Palankus Counter Strike server</h1>
+                <nav>
+                    <ul>
+                        <img src="logo buxna.png" alt="Logo" class="logo">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="our-servers.html">Our Servers</a></li>
+                        <li><a href="https://dev-buxna-palankus-forum.pantheonsite.io/">Forum</a></li>
+                        <li><a href="market.html">Market</a></li>
+                        <li><a href="https://discord.gg/7XUMzzHJ">Discord</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </header>
+    
+        <div class="main-content">
+            <section class="server-description">
+                <h2>About Buxna Palankus</h2>
+                <p>Welcome to Buxna Palankus, our extraordinary zombie server thriving since 2013! We're thrilled to have you join us. Our server has undergone numerous enhancements over the years to ensure an exceptional experience tailored to your enjoyment. Join us to immerse yourself in thrilling gameplay alongside our vibrant community of players, dedicated admins, and our attentive owner.</p>
+                <p>At Buxna Palankus, your fun and satisfaction are our top priorities. Our team is committed to providing assistance and support whenever you need it. To ensure a harmonious gaming environment for all, we kindly ask that you click the button below to view the rules.</p>
+                <button class="rules-button" onclick="toggleRules()">Rules</button>
+                <section class="rules-section" id="rules-section">
+                    <h2>Server Rules</h2>
+                    <ul class="rules-list">
+                        <li>Respect Everyone: Treat all players and staff with courtesy and respect.</li>
+                        <li>No Teaming: Collaborative efforts between players to gain an unfair advantage are prohibited.</li>
+                        <li>Spamming: Excessive spamming will result in a 1-hour gag.</li>
+                        <li>No Insults: Any form of insults or offensive behavior leads to a 2-hour gag.</li>
+                        <li>No Advertisements: Advertising other servers or products will result in a 3-day gag.</li>
+                        <li>No Hacking: Use of hacks or cheats will result in a permanent ban.</li>
+                        <li>No Begging: Asking for ammo or rank excessively will result in a 1-day gag.</li>
+                        <li>No Exploits: Exploiting SGS, Bhop, or Strafe will result in a 1-day ban.</li>
+                        <li>No Hiding as Zombie: Intentional hiding as a zombie to avoid gameplay is not allowed.</li>
+                        <li>No Ghosting: Revealing information as a spectator to living players is prohibited.</li>
+                        <li>No Spawn Camping: Attacking players immediately as they spawn is not allowed.</li>
+                        <li>No Bug Abuse: Exploiting map or game bugs for advantage is prohibited.</li>
+                        <li>No Inappropriate Content: Sharing inappropriate content will result in punishment.</li>
+                        <li>No Discrimination: Discriminatory behavior or language will not be tolerated.</li>
+                        <li>No Mic/Chat Spam: Excessive mic or chat usage disrupting gameplay is prohibited.</li>
+                    </ul>
+                </section>
+                
+            </section>
+            
+            
+        </div>
+          <footer>
+            <div class="social-icons">
+                <a href="https://discord.gg/VmJ7sQg6" target="_blank"><img src="3649922.jpg" alt="Discord Icon"></a>
+                <a href="https://www.facebook.com/groups/BuxnaZpPalanKus" target="_blank"><img src="facebook-round-color-icon.jpg" alt="Facebook Icon"></a>
+                <a href="https://www.youtube.com/@buxna2023" target="_blank"><img src="youtube.png" alt="youtube Icon"></a>
+                <a href="https://www.tiktok.com/@buxnazm" target="_blank"><img src="tiktok.png" alt="tiktok Icon"></a>
+                <a href="https://www.instagram.com/buxna2023/" target="_blank"><img src="instagram.png" alt="instagram Icon"></a>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Buxna Palankus Developer: Amnesia. All rights reserved.
+            </div>
+        </footer>
+        <script>
+             function toggleRules() {
+            var rulesSection = document.getElementById("rules-section");
+            if (rulesSection.classList.contains("active")) {
+                rulesSection.style.maxHeight = "0";
+                rulesSection.style.opacity = "0";
+                setTimeout(function() {
+                    rulesSection.classList.remove("active");
+                }, 300);
+            } else {
+                rulesSection.classList.add("active");
+                rulesSection.style.maxHeight = "500px"; /* Adjust the max-height as needed */
+                rulesSection.style.opacity = "1";
+            }
+        }     
+        </script>
+        
+   </body>
+</html>
